@@ -38,23 +38,23 @@ def ddb_list() -> list:
     return link_list
 
 
-def get_moxfield_lists():
-# Use headless browser to scrape deck list
+def get_moxfield_lists() -> list:
+    ret_list = []
     pause = random.randint(5, 15)
     options = Options()
     options.add_argument("--headless")
     s = Service('C:\chromedriver\chromedriver.exe')
-    driver = webdriver.Chrome(service=s, options=options)
 
+    driver = webdriver.Chrome(service=s, options=options)
     driver.get('https://www.moxfield.com/decks/urs4pKTeCUyZ-FJimN5prA')
     driver.implicitly_wait(pause)
-
     decklist = driver.find_elements(By.CLASS_NAME, "table-deck-row-link.text-body")
 
     for i in decklist:
-        print(i.text)
-
+        ret_list.append(i.text)
     driver.close()
+
+    return ret_list
 
 
 def get_tappedout_lists() -> list:
@@ -63,11 +63,10 @@ def get_tappedout_lists() -> list:
     options = Options()
     options.add_argument("--headless")
     s = Service('C:\chromedriver\chromedriver.exe')
-    driver = webdriver.Chrome(service=s, options=options)
 
+    driver = webdriver.Chrome(service=s, options=options)
     driver.get('https://tappedout.net/mtg-decks/druid-breach/')
     driver.implicitly_wait(pause)
-
     decklist = driver.find_elements(By.CLASS_NAME, "card-link.card-hover")
 
     for i in decklist:
@@ -75,6 +74,3 @@ def get_tappedout_lists() -> list:
         ret_list.append(i.text)
     driver.close()
     return ret_list
-
-
-get_tappedout_lists()
