@@ -8,7 +8,6 @@ import requests
 import random
 
 
-
 def ddb_list() -> list:
     url = "https://cedh-decklist-database.com/"
     page = requests.get(url)
