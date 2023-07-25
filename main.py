@@ -12,7 +12,6 @@ def ddb_list() -> list:
     url = "https://cedh-decklist-database.com/"
     page = requests.get(url)
     soup = BeautifulSoup(page.content, "html.parser")
-
     moxfield = []
     archideckt = []
     tappedout = []
