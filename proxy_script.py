@@ -7,6 +7,7 @@ working_set, broken_set = set(), set()
 VALID_STATUSES = [200, 301, 302, 307, 404]
 
 
+
 def reset_proxy(proxy):
     unchecked_set.add(proxy)
     working_set.discard(proxy)

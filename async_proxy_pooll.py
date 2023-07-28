@@ -10,6 +10,7 @@ def set_working(proxy):
     broken_set.discard(proxy)
 
 
+
 def set_not_working(proxy):
     working_set.discard(proxy)
     broken_set.add(proxy)

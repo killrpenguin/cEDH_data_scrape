@@ -131,4 +131,5 @@ def scraper():
         print('Decks scraped: ' + str(while_loop_cntrl))
 
 
+
 scraper()
