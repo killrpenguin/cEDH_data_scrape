@@ -46,4 +46,3 @@ def check_proxies():
         get(url="http://ident.me/", proxy=proxy_from_list)
 
 
-check_proxies()
