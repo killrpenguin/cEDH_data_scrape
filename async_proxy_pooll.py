@@ -26,7 +26,7 @@ async def task_coroutine(session, proxy):
 
 
 # custom coroutine
-async def main() -> set:
+async def main_proxy_pool() -> set:
     print('main coroutine started')
     proxies_list = open("BigProxyList", "r").read().strip().split("\n")
     tcp_connection = aiohttp.TCPConnector(limit=100)
@@ -40,7 +40,7 @@ async def main() -> set:
     return working_set
 
 
-asyncio.run(main())
+asyncio.run(main_proxy_pool())
 
 
 

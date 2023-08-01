@@ -9,7 +9,7 @@ import requests
 import random
 import re
 
-
+# Get list of deck links from DDB
 def ddb_list() -> tuple:
     url = "https://cedh-decklist-database.com/"
     page = requests.get(url)
@@ -26,7 +26,7 @@ def ddb_list() -> tuple:
 
     return moxfield, tappedout
 
-
+# Script to get individual lists from moxfield.com
 def get_moxfield_lists(proxy, deck_address) -> list:
     ret_list = []
     pause = random.randint(5, 15)
@@ -46,7 +46,7 @@ def get_moxfield_lists(proxy, deck_address) -> list:
 
     return ret_list
 
-
+# Script to get individual lists from tappedout.com
 def get_tappedout_lists(proxy, deck_address1) -> list:
     ret_list1 = []
     pause = random.randint(5, 15)
@@ -65,13 +65,13 @@ def get_tappedout_lists(proxy, deck_address1) -> list:
     driver.close()
     return ret_list1
 
-
+# create txt log incase the scrape gets interrupted
 def log_scrape(loglink, qty):
     f = open("scrape_log.txt", "a")
     f.write("scraped " + str(qty) + " from: " + str(loglink) + "\n")
     f.close()
 
-
+# Write data to pickle file using pandas.
 def backup_work(scrapped_list):
     df1 = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cedh_webscrape1.pk1")
     # df1 = pd.DataFrame(scrapped_list, columns=['Card_names'])
@@ -81,6 +81,7 @@ def backup_work(scrapped_list):
     print(df_to_save.tail(4))
     print(str(df_to_save.shape[0]) + ' Rows in Pickle file.')
 
+# Function for scraping the 400 deck lists from the DDB.
 def scraper():
     proxies_list = open("tested_proxies", "r").read().strip().split("\n")
     while_loop_cntrl, valid_proxy, mx_deck_address, tp_deck_address = 0, "", "", ""
