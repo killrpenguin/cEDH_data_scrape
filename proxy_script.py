@@ -7,7 +7,6 @@ working_set, broken_set = set(), set()
 VALID_STATUSES = [200, 301, 302, 307, 404]
 
 
-
 def reset_proxy(proxy):
     unchecked_set.add(proxy)
     working_set.discard(proxy)
@@ -40,6 +39,7 @@ def get(url, proxy):
     f = open("tested_proxies", "w")
     for i in working_set:
         f.write(i + "\n")
+
 
 def check_proxies():
     # proxy_from_list = proxies_list.pop()

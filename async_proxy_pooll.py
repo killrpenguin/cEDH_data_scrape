@@ -10,7 +10,6 @@ def set_working(proxy):
     broken_set.discard(proxy)
 
 
-
 def set_not_working(proxy):
     working_set.discard(proxy)
     broken_set.add(proxy)
@@ -27,20 +26,18 @@ async def task_coroutine(session, proxy):
 
 
 # custom coroutine
-async def main():
+async def main() -> set:
     print('main coroutine started')
     proxies_list = open("BigProxyList", "r").read().strip().split("\n")
     tcp_connection = aiohttp.TCPConnector(limit=100)
     async with aiohttp.ClientSession(connector=tcp_connection) as session:
         try:
             tasks = [asyncio.create_task(task_coroutine(session, i)) for i in proxies_list]
-            # wait for each task to complete
             for task in tasks:
                 await task
-            print('main coroutine done')
-            print(len(working_set))
-        except Exception as e2:
-            print(e2)
+        except Exception as e:
+            print(e)
+    return working_set
 
 
 asyncio.run(main())
