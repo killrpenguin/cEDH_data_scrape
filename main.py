@@ -1,3 +1,4 @@
+import async_proxy_pooll
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -8,6 +9,7 @@ import pandas as pd
 import requests
 import random
 import re
+import asyncio
 
 # Get list of deck links from DDB
 def ddb_list() -> tuple:
@@ -27,7 +29,7 @@ def ddb_list() -> tuple:
     return moxfield, tappedout
 
 # Script to get individual lists from moxfield.com
-def get_moxfield_lists(proxy, deck_address) -> list:
+def get_moxfield_lists(proxy, deck_address, pause) -> list:
     ret_list = []
     pause = random.randint(5, 15)
     options = Options()
@@ -38,8 +40,8 @@ def get_moxfield_lists(proxy, deck_address) -> list:
     driver = webdriver.Chrome(service=s, options=options)
     driver.get(deck_address)
     driver.implicitly_wait(pause)
-    decklist = driver.find_elements(By.CLASS_NAME, "table-deck-row-link.text-body")
-
+    decklist_dirty = driver.find_elements(By.CLASS_NAME, "table-deck-row-link.text-body")
+    decklist = set(decklist_dirty) # remove possible duplicates by converting find_elements return list to set.
     for imxrt in decklist:
         ret_list.append(imxrt.text)
     driver.close()
@@ -47,9 +49,8 @@ def get_moxfield_lists(proxy, deck_address) -> list:
     return ret_list
 
 # Script to get individual lists from tappedout.com
-def get_tappedout_lists(proxy, deck_address1) -> list:
+def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     ret_list1 = []
-    pause = random.randint(5, 15)
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--proxy_server=%s" % proxy)
@@ -58,8 +59,8 @@ def get_tappedout_lists(proxy, deck_address1) -> list:
     driver = webdriver.Chrome(service=s, options=options)
     driver.get(deck_address1)
     driver.implicitly_wait(pause)
-    decklist = driver.find_elements(By.CLASS_NAME, "card-link.card-hover")
-
+    decklist_dirty = driver.find_elements(By.CLASS_NAME, "card-link.card-hover")
+    decklist = set(decklist_dirty) # remove possible duplicates by converting find_elements return list to set.
     for itpd in decklist:
         ret_list1.append(itpd.text)
     driver.close()
@@ -83,16 +84,17 @@ def backup_work(scrapped_list):
 
 # Function for scraping the 400 deck lists from the DDB.
 def scraper():
-    proxies_list = open("tested_proxies", "r").read().strip().split("\n")
+    # proxies_list = open("tested_proxies", "r").read().strip().split("\n")
+    proxies_list = asyncio.run(async_proxy_pooll.main_proxy_pool())
     while_loop_cntrl, valid_proxy, mx_deck_address, tp_deck_address = 0, "", "", ""
     VALID_STATUSES = [200, 301, 302, 307, 404]
     moxfld, tppdout = ddb_list()
     print("Moxfield decklists: " + str(len(moxfld)) + " TappedOut decklists: " + str(len(tppdout)))
     while while_loop_cntrl <= 10000:
-        # Check the proxy is clean
+        pause = random.randint(5, 15)
         for proxy in proxies_list:
             try:
-                response = requests.get(url="http://ident.me/", proxies={'http': f"http://{proxy}"}, timeout=10)
+                response = requests.get(url="http://ident.me/", proxies=proxy, timeout=10)
                 if response.status_code in VALID_STATUSES:
                     valid_proxy = proxy
                     proxies_list.remove(proxy)
@@ -100,15 +102,15 @@ def scraper():
             except Exception as e:
                 print("Exception: ", type(e))
         if len(proxies_list) == 0:
-            proxies_list = open("tested_proxies", "r").read().strip().split("\n")
+            proxies_list = asyncio.run(async_proxy_pooll.main_proxy_pool())
         if len(moxfld) > 0:
             for mx_deck_addr in moxfld:
                 mx_deck_address = mx_deck_addr
                 moxfld.remove(mx_deck_addr)
                 print('Moxfield Decks left: ' + str(len(moxfld)))
                 break
-            mx_deck_list = get_moxfield_lists(valid_proxy, mx_deck_address)
-            mx_deck_list = [a for a in mx_deck_list if a]
+            mx_deck_list = get_moxfield_lists(valid_proxy, mx_deck_address, pause)
+            mx_deck_list = [a for a in mx_deck_list if a] # remove blanks.
             backup_work(mx_deck_list)
             print(mx_deck_address)
             log_scrape(mx_deck_address, len(mx_deck_list))
@@ -120,8 +122,8 @@ def scraper():
                 tppdout.remove(tp_deck_addr)
                 print('TappedOut Decks left: ' + str(len(tppdout)))
                 break
-            tp_deck_list = get_tappedout_lists(valid_proxy, tp_deck_address)
-            tp_deck_list = [b for b in tp_deck_list if b]
+            tp_deck_list = get_tappedout_lists(valid_proxy, tp_deck_address, pause)
+            tp_deck_list = [b for b in tp_deck_list if b] # remove blanks
             backup_work(tp_deck_list)
             print(tp_deck_address)
             log_scrape(tp_deck_address, len(tp_deck_list))
@@ -130,7 +132,6 @@ def scraper():
 
         while_loop_cntrl += 1
         print('Decks scraped: ' + str(while_loop_cntrl))
-
 
 
 if __name__ == "__main__":
