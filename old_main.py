@@ -1,11 +1,10 @@
 import async_proxy_pooll
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver import EdgeOptions
 from bs4 import BeautifulSoup
-from pathlib import Path
 import pandas as pd
+import selenium
 import requests
 import random
 import re
@@ -31,13 +30,11 @@ def ddb_list() -> tuple:
 # Script to get individual lists from moxfield.com
 def get_moxfield_lists(proxy, deck_address, pause) -> list:
     ret_list = []
-    pause = random.randint(5, 15)
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--proxy_server=%s" % proxy)
-    s = Service('C:\chromedriver\chromedriver.exe')
-
-    driver = webdriver.Chrome(service=s, options=options)
+    edge_options = EdgeOptions()
+    edge_options.use_chromium = True
+    edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
+    edge_options.add_argument("--proxy_server=%s" % proxy)
+    driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address)
     driver.implicitly_wait(pause)
     decklist_dirty = driver.find_elements(By.CLASS_NAME, "table-deck-row-link.text-body")
@@ -51,12 +48,11 @@ def get_moxfield_lists(proxy, deck_address, pause) -> list:
 # Script to get individual lists from tappedout.com
 def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     ret_list1 = []
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--proxy_server=%s" % proxy)
-    s = Service('C:\chromedriver\chromedriver.exe')
-
-    driver = webdriver.Chrome(service=s, options=options)
+    edge_options = EdgeOptions()
+    edge_options.use_chromium = True
+    edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
+    edge_options.add_argument("--proxy_server=%s" % proxy)
+    driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address1)
     driver.implicitly_wait(pause)
     decklist_dirty = driver.find_elements(By.CLASS_NAME, "card-link.card-hover")
@@ -74,8 +70,8 @@ def log_scrape(loglink, qty):
 
 # Write data to pickle file using pandas.
 def backup_work(scrapped_list):
-    df1 = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cedh_webscrape1.pk1")
-    # df1 = pd.DataFrame(scrapped_list, columns=['Card_names'])
+    # df1 = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cedh_webscrape1.pk1")
+    df1 = pd.DataFrame(scrapped_list, columns=['Card_names'])
     df2 = pd.DataFrame(scrapped_list, columns=['Card_names'])
     df_to_save = pd.concat([df1, df2], axis=0)
     df_to_save.to_pickle(r"C:\Users\dmcfa\Desktop\cedh_webscrape1.pk1")
@@ -134,5 +130,7 @@ def scraper():
         print('Decks scraped: ' + str(while_loop_cntrl))
 
 
-if __name__ == "__main__":
-    scraper()
+"""if __name__ == "__main__":
+    backup_work()"""
+a = ['test']
+backup_work(a)
