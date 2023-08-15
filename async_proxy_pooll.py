@@ -18,7 +18,7 @@ async def task_coroutine(session, proxy):
     try:
         async with session.get("http://ident.me/", proxy=proxy, timeout=300) as resp:
             if resp.status in VALID_STATUSES:
-                print(resp.status)
+                print('Status Code: ' + str(resp.status))
                 set_working(proxy)
             await resp.text()
     except Exception as e:

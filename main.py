@@ -55,7 +55,7 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address1)
     driver.implicitly_wait(pause)
-    decklist_dirty = driver.find_elements(By.CLASS_NAME, "card-link.card-hover")
+    decklist_dirty = driver.find_elements(By.CLASS_NAME, "member")
     decklist_dirty = [b for b in decklist_dirty if b] # remove blanks
     decklist_set = set(decklist_dirty) # remove possible duplicates by converting find_elements return list to set.
     ret_list1 = [c.text.split(' ', 1)[1] for c in decklist_set]
@@ -85,7 +85,7 @@ def scraper():
     moxfld, tppdout = ddb_list()
     to = len(tppdout)
     print("Moxfield decklists: " + str(len(moxfld)) + " TappedOut decklists: " + str(len(tppdout)))
-    """
+
     for x in range(len(moxfld)):
         pause = random.randint(5, 15)
         valid_proxy = proxies_list.pop()
@@ -100,7 +100,7 @@ def scraper():
         log_scrape(mx_deck_address, len(mx_deck_list))
         while_loop_cntrl += 1
         print('Decks scraped: ' + str(while_loop_cntrl))
-    """
+
     for y in range(len(tppdout)):
         pause = random.randint(5, 15)
         valid_proxy = proxies_list.pop()
