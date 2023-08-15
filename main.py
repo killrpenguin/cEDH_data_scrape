@@ -85,6 +85,7 @@ def scraper():
     moxfld, tppdout = ddb_list()
     to = len(tppdout)
     print("Moxfield decklists: " + str(len(moxfld)) + " TappedOut decklists: " + str(len(tppdout)))
+    """
     for x in range(len(moxfld)):
         pause = random.randint(5, 15)
         valid_proxy = proxies_list.pop()
@@ -99,7 +100,7 @@ def scraper():
         log_scrape(mx_deck_address, len(mx_deck_list))
         while_loop_cntrl += 1
         print('Decks scraped: ' + str(while_loop_cntrl))
-
+    """
     for y in range(len(tppdout)):
         pause = random.randint(5, 15)
         valid_proxy = proxies_list.pop()

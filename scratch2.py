@@ -9,10 +9,12 @@ edge_options.use_chromium = True
 edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
 edge_options.add_argument("--proxy_server=%s" % proxy)
 driver = selenium.webdriver.Edge(options=edge_options)
-driver.get('https://tappedout.net/mtg-decks/shuffle-hulk/')
+driver.get('https://tappedout.net/mtg-decks/ruric-thar-competitive-your-heart-is-a-muscle/')
 driver.implicitly_wait(5)
 decklist_dirty = driver.find_elements(By.CLASS_NAME, "member")
 print(len(decklist_dirty))
 decklist_dirty = [b for b in decklist_dirty if b]  # remove blanks
 decklist_set = set(decklist_dirty)  # remove possible duplicates by converting find_elements return list to set.
 decklist = [c.text.split(' ', 1)[1] for c in decklist_set]
+for i in decklist:
+    print(i)
