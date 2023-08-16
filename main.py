@@ -29,7 +29,6 @@ def ddb_list() -> tuple:
 
 # Script to get individual lists from moxfield.com
 def get_moxfield_lists(proxy, deck_address, pause) -> list:
-    ret_list = []
     edge_options = EdgeOptions()
     edge_options.use_chromium = True
     edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
@@ -37,14 +36,21 @@ def get_moxfield_lists(proxy, deck_address, pause) -> list:
     driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address)
     driver.implicitly_wait(pause)
-    decklist_dirty = driver.find_elements(By.CLASS_NAME, "table-deck-row-link.text-body")
-    decklist_dirty = [a for a in decklist_dirty if a] # remove blanks
-    decklist = set(decklist_dirty) # remove possible duplicates by converting find_elements return list to set.
-    for imxrt in decklist:
-        ret_list.append(imxrt.text)
+    decklist_dirty = driver.find_elements(By.XPATH, "//div[@class='deckview']")
+    decklist = [a.text.strip().split('\n') for a in decklist_dirty]
+    decklist = [a for a in decklist[0]]
+    decklist = [a for a in decklist if a.startswith('Buy') is False]
+    decklist = [a for a in decklist if a.startswith('Sell') is False]
+    decklist = [a for a in decklist if a.startswith('€') is False]
+    decklist = [a for a in decklist if a.startswith('View') is False]
+    decklist = [a for a in decklist if a.startswith('$') is False]
+    decklist = [a for a in decklist if a.startswith('€') is False]
+    decklist = [a for a in decklist if a.startswith('N/A') is False]
+    decklist = [a for a in decklist if a.endswith('Expand') is False]
+    decklist = [a for a in decklist if a.endswith('List') is False]
+    decklist = [a for a in decklist if (a != '1') and (a != '2')]
     driver.close()
-
-    return ret_list
+    return decklist
 
 # Script to get individual lists from tappedout.com
 def get_tappedout_lists(proxy, deck_address1, pause) -> list:
@@ -83,7 +89,6 @@ def scraper():
     print('Returned ' + str(len(proxies_list)) + ' proxies.')
     while_loop_cntrl, valid_proxy, mx_deck_address, tp_deck_address = 0, "", "", ""
     moxfld, tppdout = ddb_list()
-    decks_test = open('all_decks.txt', 'x')
     print("Moxfield decklists: " + str(len(moxfld)) + " TappedOut decklists: " + str(len(tppdout)))
 
     for x in range(len(moxfld)):
@@ -95,15 +100,13 @@ def scraper():
         mx_deck_address = moxfld.pop()
         print('Moxfield Decks left: ' + str(len(moxfld)))
         mx_deck_list = get_moxfield_lists(valid_proxy, mx_deck_address, pause)
-        # backup_work(mx_deck_list)
-        decks_test.write(moxfld[x] + ' ' +str(len(mx_deck_list)) + '\n')
-        mx_deck_list = [decks_test.write(s.strip() + '\n') for s in mx_deck_list]
+        backup_work(mx_deck_list)
         print(mx_deck_address + ' Scraped.')
         print('With proxy address: ' + str(valid_proxy))
         log_scrape(mx_deck_address, len(mx_deck_list))
         while_loop_cntrl += 1
         print('Decks scraped: ' + str(while_loop_cntrl))
-
+    """
     for y in range(len(tppdout)):
         pause = random.randint(5, 15)
         valid_proxy = proxies_list.pop()
@@ -120,6 +123,7 @@ def scraper():
         print('With proxy address: ' + str(valid_proxy))
         log_scrape(tp_deck_address, len(tp_deck_list))
         while_loop_cntrl += 1
+    """
 
 
 if __name__ == "__main__":

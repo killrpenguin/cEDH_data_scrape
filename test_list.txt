@@ -1,0 +1,1696 @@
+1.57
+Commander(1)
+Kinnan, Bonder Prodigy
+Planeswalkers(1)
+Tezzeret the Seeker
+Creatures(19)
+Birds of Paradise
+Colossal Skyturtle
+Consecrated Sphinx
+Elvish Mystic
+Fyndhorn Elves
+Gilded Drake
+Hullbreaker Horror
+Llanowar Elves
+Phantasmal Image
+Phyrexian Metamorph
+Prophet of Distortion
+Seedborn Muse
+Spellseeker
+Spellskite
+Stonework Packbeast
+Thrasios, Triton Hero
+Tidespout Tyrant
+Trophy Mage
+Wandering Archaic
+Sorceries(8)
+Fabricate
+Finale of Devastation
+Gitaxian Probe
+Reshape
+Solve the Equation
+Timetwister
+Transmute Artifact
+Windfall
+Instants(20)
+Alchemist's Retrieval
+An Offer You Can't Refuse
+Chain of Vapor
+Cyclonic Rift
+Dispel
+Dramatic Reversal
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Mana Drain
+Mental Misstep
+Mindbreak Trap
+Muddle the Mixture
+Mystical Tutor
+Pact of Negation
+Shared Summons
+Swan Song
+Veil of Summer
+Worldly Tutor
+Artifacts(20)
+Arcane Signet
+Basalt Monolith
+Chrome Mox
+Energy Refractor
+Fellwar Stone
+Isochron Scepter
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mirage Mirror
+Moonsilver Key
+Moonsnare Prototype
+Mox Amber
+Mox Diamond
+Mox Opal
+Simic Signet
+Sol Ring
+Springleaf Drum
+Talisman of Curiosity
+The One Ring
+Enchantments(4)
+Carpet of Flowers
+Mystic Remora
+Rhystic Study
+Sylvan Library
+Lands(27)
+Ancient Tomb
+Boseiju, Who Endures
+Breeding Pool
+Cephalid Coliseum
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Forbidden Orchard
+Gemstone Caverns
+Mana Confluence
+Misty Rainforest
+Otawara, Soaring City
+Polluted Delta
+Rejuvenating Springs
+Scalding Tarn
+Snow-Covered Forest
+Snow-Covered Island
+Treasure Vault
+Tropical Island
+Verdant Catacombs
+Waterlogged Grove
+Windswept Heath
+Wooded Foothills
+Yavimaya Coast
+1.41
+Commander(1)
+Kinnan, Bonder Prodigy
+Battles(1)
+Invasion of Ikoria
+Planeswalkers(2)
+Karn, the Great Creator
+Tezzeret the Seeker
+Creatures(27)
+Allosaurus Shepherd
+Armored Scrapgorger
+Birds of Paradise
+Bloom Tender
+Consecrated Sphinx
+Deadeye Navigator
+Elvish Mystic
+Endurance
+Fyndhorn Elves
+Gilded Drake
+Hullbreaker Horror
+Jin-Gitaxias, Progress Tyrant
+Llanowar Elves
+Manglehorn
+Nezahal, Primal Tide
+Nyxbloom Ancient
+Perplexing Chimera
+Phantasmal Image
+Phyrexian Metamorph
+Seedborn Muse
+Spellskite
+Stonework Packbeast
+Terastodon
+Thassa's Oracle
+Thrasios, Triton Hero
+Void Winnower
+Wandering Archaic
+Sorceries(4)
+Finale of Devastation
+Green Sun's Zenith
+Sea Gate Restoration
+Transmute Artifact
+Instants(19)
+Brainstorm
+Crop Rotation
+Cyclonic Rift
+Delay
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Vigor
+Force of Will
+March of Swirling Mist
+Mental Misstep
+Mindbreak Trap
+Mystical Tutor
+Pact of Negation
+Pongify
+Summoner's Pact
+Swan Song
+Veil of Summer
+Worldly Tutor
+Artifacts(19)
+Arcane Signet
+Basalt Monolith
+Chrome Mox
+Fellwar Stone
+Grim Monolith
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Moonsnare Prototype
+Mox Amber
+Mox Diamond
+Mox Opal
+Simic Signet
+Sol Ring
+Springleaf Drum
+Talisman of Curiosity
+The One Ring
+Trinisphere
+Enchantments(2)
+Mystic Remora
+Unstable Harmonics
+Lands(25)
+· 26 including mdfc
+Ancient Tomb
+Barkchannel Pathway
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Emergence Zone
+Exotic Orchard
+Forest
+Gaea's Cradle
+Gemstone Caverns
+Homeward Path
+Island
+Mana Confluence
+Minamo, School at Water's Edge
+Misty Rainforest
+Otawara, Soaring City
+Polluted Delta
+Rejuvenating Springs
+Treasure Vault
+Tropical Island
+Waterlogged Grove
+Windswept Heath
+Yavimaya Coast
+Yavimaya, Cradle of Growth
+1.57
+Commander(1)
+Kinnan, Bonder Prodigy
+Battles(1)
+Invasion of Ikoria
+Planeswalkers(1)
+Tezzeret the Seeker
+Creatures(22)
+Elvish Spirit Guide
+0
+Birds of Paradise
+Elvish Mystic
+Fyndhorn Elves
+Llanowar Elves
+Bloom Tender
+Gilded Drake
+Phantasmal Image
+Spellskite
+Stonework Packbeast
+Thrasios, Triton Hero
+Manglehorn
+Trophy Mage
+Phyrexian Metamorph
+Perplexing Chimera
+Seedborn Muse
+Wandering Archaic
+Consecrated Sphinx
+Hullbreaker Horror
+Nyxbloom Ancient
+Tidespout Tyrant
+Void Winnower
+Sorceries(6)
+Green Sun's Zenith
+Finale of Devastation
+Reshape
+Transmute Artifact
+Fabricate
+Timetwister
+Instants(21)
+Pact of Negation
+Summoner's Pact
+An Offer You Can't Refuse
+Chain of Vapor
+Flusterstorm
+March of Swirling Mist
+Mental Misstep
+Mystical Tutor
+Noxious Revival
+Swan Song
+Veil of Summer
+Worldly Tutor
+Cyclonic Rift
+Delay
+Mana Drain
+Resculpt
+Chord of Calling
+Fierce Guardianship
+Force of Negation
+Mindbreak Trap
+Force of Will
+Artifacts(18)
+Chrome Mox
+Lotus Petal
+Mana Crypt
+Mox Amber
+Mox Diamond
+Mox Opal
+Mana Vault
+Sol Ring
+Springleaf Drum
+Arcane Signet
+Fellwar Stone
+Grim Monolith
+Moonsilver Key
+Simic Signet
+Talisman of Curiosity
+Basalt Monolith
+Mirage Mirror
+The One Ring
+Enchantments(3)
+Mystic Remora
+Copy Artifact
+Rhystic Study
+Lands(27)
+Ancient Tomb
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Forest
+Gemstone Caverns
+Island
+Mana Confluence
+Misty Rainforest
+Otawara, Soaring City
+Polluted Delta
+Prismatic Vista
+Rejuvenating Springs
+Scalding Tarn
+Snow-Covered Forest
+Snow-Covered Island
+Tarnished Citadel
+Tropical Island
+Verdant Catacombs
+Waterlogged Grove
+Windswept Heath
+Wooded Foothills
+Yavimaya Coast
+Commander(2)
+Thrasios, Triton Hero
+Tevesh Szat, Doom of Fools
+Battles(1)
+Invasion of Ikoria
+Planeswalkers(1)
+Tyvar, Jubilant Brawler
+Creatures(17)
+Arbor Elf
+Birds of Paradise
+Deathrite Shaman
+Elves of Deep Shadow
+Elvish Mystic
+Fyndhorn Elves
+Llanowar Elves
+Bloom Tender
+Collector Ouphe
+Dauthi Voidwalker
+Divining Witch
+Gilded Drake
+Orcish Bowmasters
+Phantasmal Image
+Thassa's Oracle
+Laboratory Maniac
+Opposition Agent
+Sorceries(11)
+Gitaxian Probe
+Imperial Seal
+Demonic Tutor
+Diabolic Intent
+Finale of Devastation
+Neoform
+Doomsday
+Eldritch Evolution
+Mnemonic Betrayal
+Yawgmoth's Will
+Culling Ritual
+Instants(25)
+Pact of Negation
+An Offer You Can't Refuse
+Chain of Vapor
+Crop Rotation
+Culling the Weak
+Dark Ritual
+Demonic Consultation
+Flusterstorm
+March of Swirling Mist
+Mental Misstep
+Mystical Tutor
+Swan Song
+Vampiric Tutor
+Veil of Summer
+Worldly Tutor
+Abrupt Decay
+Assassin's Trophy
+Cyclonic Rift
+Mana Drain
+Tainted Pact
+Fierce Guardianship
+Force of Negation
+Mindbreak Trap
+Ad Nauseam
+Force of Will
+Artifacts(9)
+Chrome Mox
+Jeweled Lotus
+Lion's Eye Diamond
+Lotus Petal
+Mana Crypt
+Mox Diamond
+Mana Vault
+Sol Ring
+The One Ring
+Enchantments(5)
+Carpet of Flowers
+Mystic Remora
+Wild Growth
+Necropotence
+Rhystic Study
+Lands(29)
+Ancient Tomb
+Bayou
+Bloodstained Mire
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gaea's Cradle
+Gemstone Caverns
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Nurturing Peatland
+Otawara, Soaring City
+Overgrown Tomb
+Polluted Delta
+Rejuvenating Springs
+Scalding Tarn
+Tropical Island
+Underground Sea
+Undergrowth Stadium
+Verdant Catacombs
+Waterlogged Grove
+Watery Grave
+Windswept Heath
+Wooded Foothills
+Commander(2)
+Tevesh Szat, Doom of Fools
+Thrasios, Triton Hero
+Planeswalkers(2)
+Grist, the Hunger Tide
+Oko, Thief of Crowns
+Creatures(19)
+Arbor Elf
+Birds of Paradise
+Bloom Tender
+Dauthi Voidwalker
+Deathrite Shaman
+Delighted Halfling
+Elves of Deep Shadow
+Endurance
+Gilded Drake
+Laboratory Maniac
+Ledger Shredder
+Malevolent Hermit
+Notion Thief
+Opposition Agent
+Orcish Bowmasters
+Seedborn Muse
+Spellseeker
+Thassa's Oracle
+Yawgmoth, Thran Physician
+Sorceries(9)
+Culling Ritual
+Demonic Tutor
+Diabolic Intent
+Eldritch Evolution
+Gitaxian Probe
+Imperial Seal
+Neoform
+Timetwister
+Yawgmoth's Will
+Instants(28)
+Abrupt Decay
+Ad Nauseam
+An Offer You Can't Refuse
+Assassin's Trophy
+Brainstorm
+Chain of Vapor
+Crop Rotation
+Culling the Weak
+Cyclonic Rift
+Dark Ritual
+Delay
+Demonic Consultation
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Lim-Dûl's Vault
+Mana Drain
+March of Swirling Mist
+Mental Misstep
+Miscast
+Mystical Tutor
+Noxious Revival
+Pact of Negation
+Swan Song
+Tainted Pact
+Vampiric Tutor
+Veil of Summer
+Artifacts(7)
+Chrome Mox
+Jeweled Lotus
+Mana Crypt
+Mana Vault
+Mox Diamond
+Skullclamp
+Sol Ring
+Enchantments(3)
+Mystic Remora
+Rhystic Study
+Sylvan Library
+Lands(30)
+Ancient Tomb
+Bayou
+Bloodstained Mire
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Forest
+Gaea's Cradle
+Gemstone Caverns
+Island
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Nurturing Peatland
+Otawara, Soaring City
+Overgrown Tomb
+Polluted Delta
+Rejuvenating Springs
+Scalding Tarn
+Tropical Island
+Underground Sea
+Verdant Catacombs
+Waterlogged Grove
+Watery Grave
+Windswept Heath
+Wooded Foothills
+Commander(2)
+Tevesh Szat, Doom of Fools
+Thrasios, Triton Hero
+Battles(1)
+Invasion of Ikoria
+Planeswalkers(1)
+Grist, the Hunger Tide
+Creatures(19)
+Birds of Paradise
+Blood Pet
+Bloom Tender
+Collector Ouphe
+Dauthi Voidwalker
+Deathrite Shaman
+Elves of Deep Shadow
+Elvish Mystic
+Fyndhorn Elves
+Gilded Drake
+Ledger Shredder
+Llanowar Elves
+Opposition Agent
+Phantasmal Image
+Protean Hulk
+Seedborn Muse
+Spellseeker
+Thassa's Oracle
+Viscera Seer
+Sorceries(11)
+Culling Ritual
+Demonic Tutor
+Diabolic Intent
+Eldritch Evolution
+Imperial Seal
+Mnemonic Betrayal
+Natural Order
+Neoform
+Praetor's Grasp
+Reanimate
+Unmarked Grave
+Instants(24)
+Abrupt Decay
+Ad Nauseam
+An Offer You Can't Refuse
+Assassin's Trophy
+Chain of Vapor
+Crop Rotation
+Dark Ritual
+Demonic Consultation
+Entomb
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+March of Swirling Mist
+Mental Misstep
+Miscast
+Mystical Tutor
+Noxious Revival
+Pact of Negation
+Spell Pierce
+Swan Song
+Tainted Pact
+Vampiric Tutor
+Veil of Summer
+Artifacts(8)
+Chrome Mox
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Diamond
+Null Rod
+Sol Ring
+Enchantments(5)
+Carpet of Flowers
+Mystic Remora
+Necromancy
+Rhystic Study
+Survival of the Fittest
+Lands(29)
+Ancient Tomb
+Bayou
+Bloodstained Mire
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gaea's Cradle
+Gemstone Caverns
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Nurturing Peatland
+Otawara, Soaring City
+Overgrown Tomb
+Phyrexian Tower
+Polluted Delta
+Rejuvenating Springs
+Scalding Tarn
+Tropical Island
+Underground Sea
+Undergrowth Stadium
+Verdant Catacombs
+Waterlogged Grove
+Watery Grave
+Windswept Heath
+Wooded Foothills
+Commander(2)
+Tevesh Szat, Doom of Fools
+Thrasios, Triton Hero
+Creatures(13)
+Birds of Paradise
+Dauthi Voidwalker
+Deathrite Shaman
+Displacer Kitten
+Elvish Spirit Guide
+Hullbreaker Horror
+Kinnan, Bonder Prodigy
+Ledger Shredder
+Opposition Agent
+Orcish Bowmasters
+Seedborn Muse
+Spellseeker
+Thassa's Oracle
+Sorceries(8)
+Culling Ritual
+Demonic Tutor
+Gitaxian Probe
+Imperial Seal
+Persist
+Reanimate
+Timetwister
+Toxic Deluge
+Instants(29)
+Abrupt Decay
+Ad Nauseam
+An Offer You Can't Refuse
+Assassin's Trophy
+Chain of Vapor
+Crop Rotation
+Cyclonic Rift
+Dark Ritual
+Deadly Rollick
+Delay
+Demonic Consultation
+Entomb
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Mana Drain
+Mental Misstep
+Mindbreak Trap
+Miscast
+Mystical Tutor
+Noxious Revival
+Pact of Negation
+Summoner's Pact
+Swan Song
+Tainted Pact
+Vampiric Tutor
+Veil of Summer
+Worldly Tutor
+Artifacts(15)
+Arcane Signet
+Basalt Monolith
+Chrome Mox
+Fellwar Stone
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Amber
+Mox Diamond
+Mox Opal
+Skullclamp
+Sol Ring
+Talisman of Dominance
+Wishclaw Talisman
+Enchantments(4)
+Carpet of Flowers
+Mystic Remora
+Rhystic Study
+Training Grounds
+Lands(29)
+Balin's Tomb
+Bayou
+Bloodstained Mire
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gaea's Cradle
+Gemstone Caverns
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Otawara, Soaring City
+Overgrown Tomb
+Polluted Delta
+Rejuvenating Springs
+Scalding Tarn
+Snow-Covered Island
+Tropical Island
+Underground Sea
+Undergrowth Stadium
+Urza's Saga
+Verdant Catacombs
+Watery Grave
+Windswept Heath
+Wooded Foothills
+Commander(1)
+Tivit, Seller of Secrets
+Planeswalkers(1)
+Teferi, Time Raveler
+Creatures(11)
+Displacer Kitten
+Drannith Magistrate
+Esper Sentinel
+Grand Abolisher
+Hullbreaker Horror
+Lotho, Corrupt Shirriff
+Opposition Agent
+Orcish Bowmasters
+Phyrexian Metamorph
+Ranger-Captain of Eos
+Thassa's Oracle
+Sorceries(6)
+Demonic Tutor
+Imperial Seal
+Mnemonic Betrayal
+Peer into the Abyss
+Toxic Deluge
+Transmute Artifact
+Instants(27)
+Ad Nauseam
+An Offer You Can't Refuse
+Cabal Ritual
+Chain of Vapor
+Cyclonic Rift
+Dark Ritual
+Delay
+Demonic Consultation
+Enlightened Tutor
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Lim-Dûl's Vault
+Mana Drain
+Mental Misstep
+Mindbreak Trap
+Muddle the Mixture
+Mystical Tutor
+Pact of Negation
+Path to Exile
+Silence
+Swan Song
+Swords to Plowshares
+Tainted Pact
+Vampiric Tutor
+Whir of Invention
+Artifacts(20)
+Arcane Signet
+Chrome Mox
+Cursed Totem
+Fellwar Stone
+Grafdigger's Cage
+Grim Monolith
+Imposter Mech
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Diamond
+Mox Opal
+Sol Ring
+Talisman of Dominance
+Talisman of Hierarchy
+Talisman of Progress
+The One Ring
+Time Sieve
+Wishclaw Talisman
+Enchantments(5)
+Blind Obedience
+Mystic Remora
+Rhystic Study
+Smothering Tithe
+Touch the Spirit Realm
+Lands(29)
+Ancient Tomb
+Arid Mesa
+Bloodstained Mire
+Cavern of Souls
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gemstone Caverns
+Godless Shrine
+Hallowed Fountain
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Otawara, Soaring City
+Polluted Delta
+Scalding Tarn
+Scrubland
+Sea of Clouds
+Spire of Industry
+Tundra
+Underground River
+Underground Sea
+Urza's Saga
+Vault of Champions
+Verdant Catacombs
+Watery Grave
+Windswept Heath
+Sideboard(9)
+Blue Elemental Blast
+Entomb
+Gitaxian Probe
+Intuition
+Lurrus of the Dream-Den
+Reanimate
+Sevinne's Reclamation
+Timetwister
+Yawgmoth's Will
+Commander(1)
+Tivit, Seller of Secrets
+Creatures(10)
+Dauthi Voidwalker
+Displacer Kitten
+Drannith Magistrate
+Esper Sentinel
+Grand Abolisher
+Hullbreaker Horror
+Notion Thief
+Opposition Agent
+Ranger-Captain of Eos
+Thassa's Oracle
+Sorceries(13)
+Demonic Tutor
+Gitaxian Probe
+Imperial Seal
+Mnemonic Betrayal
+Praetor's Grasp
+Reanimate
+Sevinne's Reclamation
+Timetwister
+Toxic Deluge
+Transmute Artifact
+Unmarked Grave
+Windfall
+Yawgmoth's Will
+Instants(27)
+Ad Nauseam
+An Offer You Can't Refuse
+Blue Elemental Blast
+Cabal Ritual
+Chain of Vapor
+Cyclonic Rift
+Dark Ritual
+Delay
+Demonic Consultation
+Dispel
+Enlightened Tutor
+Entomb
+Essence Flux
+Flusterstorm
+Force of Negation
+Force of Will
+Intuition
+Lim-Dûl's Vault
+Mental Misstep
+Mindbreak Trap
+Mystical Tutor
+Pact of Negation
+Silence
+Spell Pierce
+Swan Song
+Tainted Pact
+Vampiric Tutor
+Artifacts(18)
+Arcane Signet
+Chrome Mox
+Defense Grid
+Fellwar Stone
+Grim Monolith
+Jeweled Lotus
+Lion's Eye Diamond
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Diamond
+Mox Opal
+Sol Ring
+Talisman of Dominance
+Talisman of Hierarchy
+Talisman of Progress
+Time Sieve
+Wishclaw Talisman
+Enchantments(5)
+Animate Dead
+Dance of the Dead
+Dress Down
+Mystic Remora
+Rhystic Study
+Lands(26)
+Ancient Tomb
+Arid Mesa
+Bloodstained Mire
+Cavern of Souls
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gemstone Caverns
+Godless Shrine
+Hallowed Fountain
+Inventors' Fair
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Otawara, Soaring City
+Polluted Delta
+Scalding Tarn
+Scrubland
+Sea of Clouds
+Tundra
+Underground Sea
+Verdant Catacombs
+Watery Grave
+Windswept Heath
+Sideboard(23)
+Abdel Adrian, Gorion's Ward
+Aven Mindcensor
+Brainstorm
+Cursed Totem
+Fabricate
+Gilded Drake
+Grim Hireling
+Ledger Shredder
+Mana Drain
+March of Swirling Mist
+Necropotence
+Peer into the Abyss
+Persist
+Phantasmal Image
+Razaketh, the Foulblooded
+Rushing River
+Shallow Grave
+Smothering Tithe
+Soul-Guide Lantern
+Spellseeker
+Spire of Industry
+Teferi, Time Raveler
+Vanishing Verse
+Commander(1)
+Marneus Calgar
+Creatures(17)
+Archivist of Oghma
+Containment Priest
+Dauthi Voidwalker
+Drannith Magistrate
+Esper Sentinel
+Faerie Mastermind
+Gilded Drake
+Grand Abolisher
+Grim Hireling
+Hullbreaker Horror
+Lavinia, Azorius Renegade
+Lotho, Corrupt Shirriff
+Opposition Agent
+Orcish Bowmasters
+Phantasmal Image
+Ranger-Captain of Eos
+Thassa's Oracle
+Sorceries(6)
+Demonic Tutor
+Imperial Seal
+Mnemonic Betrayal
+Praetor's Grasp
+Supreme Verdict
+Toxic Deluge
+Instants(26)
+An Offer You Can't Refuse
+Blue Elemental Blast
+Chain of Vapor
+Cyclonic Rift
+Dark Ritual
+Delay
+Demonic Consultation
+Dispel
+Enlightened Tutor
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Mana Drain
+March of Swirling Mist
+Mental Misstep
+Mindbreak Trap
+Miscast
+Mystical Tutor
+Pact of Negation
+Path to Exile
+Silence
+Swan Song
+Swords to Plowshares
+Tainted Pact
+Vampiric Tutor
+Artifacts(17)
+Arcane Signet
+Chrome Mox
+Fellwar Stone
+Grafdigger's Cage
+Grim Monolith
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Diamond
+Mox Opal
+Sol Ring
+Springleaf Drum
+Talisman of Dominance
+Talisman of Hierarchy
+Talisman of Progress
+Wishclaw Talisman
+Enchantments(4)
+Mystic Remora
+Rhystic Study
+Smothering Tithe
+Touch the Spirit Realm
+Lands(29)
+Ancient Tomb
+Arid Mesa
+Bloodstained Mire
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gemstone Caverns
+Godless Shrine
+Hallowed Fountain
+Island
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Otawara, Soaring City
+Polluted Delta
+Scalding Tarn
+Scrubland
+Sea of Clouds
+Spire of Industry
+Swamp
+Tundra
+Underground River
+Underground Sea
+Vault of Champions
+Verdant Catacombs
+Watery Grave
+Windswept Heath
+Commander(1)
+Marneus Calgar
+Creatures(16)
+Abdel Adrian, Gorion's Ward
+Archivist of Oghma
+Dauthi Voidwalker
+Drannith Magistrate
+Esper Sentinel
+Faerie Mastermind
+Gilded Drake
+Grand Abolisher
+Grim Hireling
+Hullbreaker Horror
+Ledger Shredder
+Lotho, Corrupt Shirriff
+Opposition Agent
+Orcish Bowmasters
+Ranger-Captain of Eos
+Thassa's Oracle
+Sorceries(5)
+Damn
+Demonic Tutor
+Imperial Seal
+Reanimate
+Yawgmoth's Will
+Instants(28)
+Ad Nauseam
+An Offer You Can't Refuse
+Cabal Ritual
+Chain of Vapor
+Cyclonic Rift
+Dark Ritual
+Demonic Consultation
+Dramatic Reversal
+Enlightened Tutor
+Entomb
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Mana Drain
+March of Swirling Mist
+Mental Misstep
+Mindbreak Trap
+0
+Miscast
+Muddle the Mixture
+Mystical Tutor
+Pact of Negation
+Silence
+Spell Pierce
+Swan Song
+Swords to Plowshares
+Tainted Pact
+Vampiric Tutor
+Artifacts(15)
+Arcane Signet
+Chrome Mox
+Fellwar Stone
+Grim Monolith
+Isochron Scepter
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Diamond
+Mox Opal
+Sol Ring
+Talisman of Dominance
+Talisman of Progress
+Wishclaw Talisman
+Enchantments(7)
+Animate Dead
+Counterbalance
+Mystic Remora
+Necromancy
+Necropotence
+Rhystic Study
+Smothering Tithe
+Lands(28)
+Ancient Tomb
+Arid Mesa
+Bloodstained Mire
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Gemstone Caverns
+Godless Shrine
+Hallowed Fountain
+Island
+Mana Confluence
+Marsh Flats
+Misty Rainforest
+Morphic Pool
+Otawara, Soaring City
+Polluted Delta
+Scalding Tarn
+Scrubland
+Sea of Clouds
+Swamp
+Tundra
+Underground River
+Underground Sea
+Vault of Champions
+Verdant Catacombs
+Watery Grave
+Windswept Heath
+Sideboard(23)
+Ashnod's Altar
+Black Market Connections
+Cavern of Souls
+Cursed Totem
+Dance of the Dead
+Dispel
+Dovin's Veto
+Dress Down
+Grafdigger's Cage
+Lim-Dûl's Vault
+Monastery Mentor
+Nadir Kraken
+Necropotence
+Phantasmal Image
+Phyrexian Altar
+Poppet Stitcher
+Power Artifact
+Praetor's Grasp
+Sensei's Divining Top
+Tarnished Citadel
+Toxic Deluge
+Training Grounds
+Urza's Saga
+Commander(2)
+Dargo, the Shipwrecker
+Thrasios, Triton Hero
+Battles(1)
+Invasion of Ikoria
+Creatures(17)
+Birds of Paradise
+Displacer Kitten
+Dockside Extortionist
+Elvish Mystic
+Eternal Witness
+Imperial Recruiter
+Kinnan, Bonder Prodigy
+Llanowar Elves
+Phantasmal Image
+Phyrexian Metamorph
+Ragavan, Nimble Pilferer
+Seedborn Muse
+Simian Spirit Guide
+Spellseeker
+Temur Sabertooth
+Tidespout Tyrant
+Tinder Wall
+Sorceries(7)
+Eldritch Evolution
+Finale of Devastation
+Gamble
+Jeska's Will
+Life's Legacy
+Neoform
+Wheel of Fortune
+Instants(24)
+An Offer You Can't Refuse
+Brain Freeze
+Chain of Vapor
+Chord of Calling
+Cyclonic Rift
+Deflecting Swat
+Dispel
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Lightning Bolt
+March of Swirling Mist
+Mental Misstep
+Mindbreak Trap
+Muddle the Mixture
+Mystical Tutor
+Noxious Revival
+Pact of Negation
+Pyroblast
+Red Elemental Blast
+Snap
+Swan Song
+Worldly Tutor
+Artifacts(16)
+Arcane Signet
+Basalt Monolith
+Birthing Pod
+Chrome Mox
+Fellwar Stone
+Jeweled Lotus
+Lion's Eye Diamond
+Lotus Petal
+Mana Crypt
+Mana Vault
+Mox Amber
+Mox Diamond
+Mox Opal
+Sol Ring
+Talisman of Curiosity
+The One Ring
+Enchantments(5)
+Greater Good
+Mystic Remora
+Rhystic Study
+Training Grounds
+Underworld Breach
+Lands(28)
+Ancient Tomb
+Arid Mesa
+Bloodstained Mire
+Boseiju, Who Endures
+Breeding Pool
+City of Brass
+Command Tower
+Exotic Orchard
+Flooded Strand
+Forest
+Gaea's Cradle
+Gemstone Caverns
+Island
+Mana Confluence
+Misty Rainforest
+Otawara, Soaring City
+Polluted Delta
+Scalding Tarn
+Spire Garden
+Steam Vents
+Stomping Ground
+Taiga
+Training Center
+Tropical Island
+Verdant Catacombs
+Volcanic Island
+Windswept Heath
+Wooded Foothills
+2.73
+Commander(1)
+Magda, Brazen Outlaw
+Creatures(27)
+Academy Manufactor
+Adaptive Automaton
+Axgard Cavalry
+Bloodfire Dwarf
+Chiss-Goria, Forge Tyrant
+Dockside Extortionist
+Dwarven Armorer
+Dwarven Bloodboiler
+Dwarven Grunt
+Dwarven Scorcher
+Dwarven Trader
+Enslaved Dwarf
+Fury
+Gimli of the Glittering Caves
+Goblin Engineer
+Goblin Welder
+Liberated Dwarf
+Metallic Mimic
+Painter's Servant
+Professional Face-Breaker
+Ragavan, Nimble Pilferer
+Simian Spirit Guide
+Soulless Jailer
+Spark Mage
+Twinshot Sniper
+Universal Automaton
+Xorn
+Sorceries(4)
+Gamble
+Jeska's Will
+Rite of Flame
+Shatterskull Smashing
+Instants(9)
+Abrade
+Chaos Warp
+Deflecting Swat
+Galvanic Blast
+Pyroblast
+Red Elemental Blast
+Rending Volley
+Tibalt's Trickery
+Wild Magic Surge
+Artifacts(29)
+Ashnod's Transmogrant
+Chrome Mox
+Clock of Omens
+Clown Car
+Cursed Mirror
+God-Pharaoh's Statue
+Grindstone
+Jeweled Lotus
+Liquimetal Torque
+Lotus Petal
+Mana Crypt
+Maskwood Nexus
+Memory Jar
+Mirror of the Forebears
+Mox Amber
+Mox Diamond
+Portal to Phyrexia
+Sculpting Steel
+Smuggler's Copter
+Sol Ring
+Soul-Guide Lantern
+Sphere of Resistance
+Spine of Ish Sah
+Springleaf Drum
+Sting, the Glinting Dagger
+Tangle Wire
+The One Ring
+Thorn of Amethyst
+Unlicensed Hearse
+Enchantments(2)
+Blood Moon
+Fable of the Mirror-Breaker
+Lands(28)
+· 29 including mdfc
+Ancient Tomb
+Barbarian Ring
+Blast Zone
+Cavern of Souls
+City of Traitors
+Command Beacon
+Den of the Bugbear
+Emergence Zone
+Gemstone Caverns
+Great Furnace
+Holdout Settlement
+Homeward Path
+10
+Mountain
+Mutavault
+Shinka, the Bloodsoaked Keep
+Survivors' Encampment
+The Mycosynth Gardens
+Treasure Vault
+Urza's Saga
+Sideboard(42)
+Bloodline Pretender
+Bogardan Hellkite
+Buried Ruin
+Damping Sphere
+Drakuseth, Maw of Flames
+Elixir of Immortality
+Final Fortune
+Glóin, Dwarf Emissary
+Grinding Station
+High-Speed Hoverbike
+Imperial Recruiter
+15
+Island
+Karn, the Great Creator
+Lightning Bolt
+Liquimetal Coating
+Pithing Needle
+Proteus Machine
+Pyrokinesis
+Ramunap Ruins
+Reckoner Bankbuster
+Skarrgan Hellkite
+Slicer, Hired Muscle
+Stoke the Flames
+Strike It Rich
+Trinisphere
+Utvara Hellkite
+Welding Jar
+Wheel of Fortune
+Commander(1)
+Magda, Brazen Outlaw
+Battles(1)
+Invasion of Tarkir
+Creatures(28)
+Academy Manufactor
+Adaptive Automaton
+Axgard Cavalry
+Battered Golem
+Bloodfire Dwarf
+Cavern-Hoard Dragon
+Chiss-Goria, Forge Tyrant
+Dockside Extortionist
+Drakuseth, Maw of Flames
+Dwarven Armorer
+Dwarven Bloodboiler
+Dwarven Grunt
+Dwarven Scorcher
+Dwarven Trader
+Enslaved Dwarf
+Gadrak, the Crown-Scourge
+Gimli of the Glittering Caves
+Glóin, Dwarf Emissary
+Goblin Welder
+Liberated Dwarf
+Professional Face-Breaker
+Ragavan, Nimble Pilferer
+Simian Spirit Guide
+Skarrgan Hellkite
+Spark Mage
+Terror of the Peaks
+Universal Automaton
+Xorn
+Sorceries(2)
+Jeska's Will
+Rite of Flame
+Instants(11)
+Abrade
+Blades of Velis Vel
+Deflecting Swat
+Delayed Blast Fireball
+Galvanic Blast
+Lightning Bolt
+Pyroblast
+Pyrokinesis
+Red Elemental Blast
+Rending Volley
+Sudden Shock
+Artifacts(29)
+Chrome Mox
+Clock of Omens
+Clown Car
+Cursed Mirror
+Damping Sphere
+God-Pharaoh's Statue
+Grafdigger's Cage
+High-Speed Hoverbike
+Jeweled Lotus
+Liquimetal Torque
+Lotus Petal
+Mana Crypt
+Maskwood Nexus
+Mirror of the Forebears
+Mox Amber
+Mox Diamond
+Mox Opal
+Null Rod
+Portal to Phyrexia
+Sculpting Steel
+Smuggler's Copter
+Sol Ring
+Sphere of Resistance
+Springleaf Drum
+Tangle Wire
+Thorn of Amethyst
+Torpor Orb
+Unlicensed Hearse
+Winter Orb
+Lands(28)
+Ancient Tomb
+Barbarian Ring
+Command Beacon
+Glittering Caves of Aglarond
+Great Furnace
+Green Dragon Inn
+Helm's Deep
+Holdout Settlement
+13
+Mountain
+Mutavault
+Paths of the Dead
+Sokenzan, Crucible of Defiance
+Survivors' Encampment
+The Mycosynth Gardens
+Treasure Vault
+Urza's Saga
+Sideboard(4)
+Elixir of Immortality
+Memory Jar
+Spiteful Banditry
+The One Ring
+Commander(1)
+Shorikai, Genesis Engine
+Planeswalkers(2)
+Narset, Parter of Veils
+Tezzeret the Seeker
+Creatures(1)
+Hullbreaker Horror
+Sorceries(10)
+Gitaxian Probe
+Merchant Scroll
+Polymorph
+Ponder
+Sevinne's Reclamation
+Solve the Equation
+Timetwister
+Transmute Artifact
+Vanquish the Horde
+Windfall
+Instants(28)
+Alchemist's Retrieval
+An Offer You Can't Refuse
+Brainstorm
+Chain of Vapor
+Cyclonic Rift
+Delay
+Dig Through Time
+Dramatic Reversal
+Enlightened Tutor
+Fierce Guardianship
+Flusterstorm
+Force of Negation
+Force of Will
+Geistwave
+Long-Term Plans
+Mana Drain
+Mental Misstep
+Muddle the Mixture
+Mystical Tutor
+Narset's Reversal
+Pact of Negation
+Path to Exile
+Resculpt
+Silence
+Spell Pierce
+Swan Song
+Swords to Plowshares
+Whir of Invention
+Artifacts(22)
+Arcane Signet
+Azorius Signet
+Chrome Mox
+Cursed Totem
+Fellwar Stone
+Grim Monolith
+Isochron Scepter
+Jeweled Lotus
+Lotus Petal
+Mana Crypt
+Mana Vault
+Manifold Key
+Mox Diamond
+Mox Opal
+Pithing Needle
+Proteus Staff
+Skullclamp
+Sol Ring
+Talisman of Progress
+Torpor Orb
+Unwinding Clock
+Voltaic Key
+Enchantments(7)
+Blind Obedience
+Copy Artifact
+Dress Down
+Humility
+Mystic Remora
+Rest in Peace
+Unstable Harmonics
+Lands(29)
+Adarkar Wastes
+Ancient Tomb
+Arid Mesa
+Cephalid Coliseum
+City of Traitors
+Command Tower
+Eiganjo, Seat of the Empire
+Emergence Zone
+Flooded Strand
+Gemstone Caverns
+Hallowed Fountain
+Hengegate Pathway
+Island
+Mana Confluence
+Marsh Flats
+Minamo, School at Water's Edge
+Misty Rainforest
+Mystic Sanctuary
+Otawara, Soaring City
+Polluted Delta
+Prismatic Vista
+Scalding Tarn
+Sea of Clouds
+Snow-Covered Plains
+The Tabernacle at Pendrell Vale
+Tundra
+Urza's Saga
+Windswept Heath
