@@ -21,7 +21,6 @@ async def task_coroutine(session, proxy):
         print("Exception: ", e)
 
 
-# custom coroutine
 async def main_proxy_pool() -> list:
     proxy_list = open("MasterProxyList", "r").read().strip().split("\n")
     tcp_connection = aiohttp.TCPConnector(limit=250)
