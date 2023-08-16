@@ -64,7 +64,7 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
 
 # create txt log incase the scrape gets interrupted
 def log_scrape(loglink, qty):
-    f = open("scrape_log.txt", "a")
+    f = open("third scrape/scrape_log.txt", "a")
     f.write("scraped " + str(qty) + " from: " + str(loglink) + "\n")
     f.close()
 

@@ -63,7 +63,7 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
 
 # create txt log incase the scrape gets interrupted
 def log_scrape(loglink, qty):
-    f = open("scrape_log.txt", "a")
+    f = open("third scrape/scrape_log.txt", "a")
     f.write("scraped " + str(qty) + " from: " + str(loglink) + "\n")
     f.close()
 
@@ -83,7 +83,7 @@ def scraper():
     print('Returned ' + str(len(proxies_list)) + ' proxies.')
     while_loop_cntrl, valid_proxy, mx_deck_address, tp_deck_address = 0, "", "", ""
     moxfld, tppdout = ddb_list()
-    to = len(tppdout)
+    decks_test = open('all_decks.txt', 'x')
     print("Moxfield decklists: " + str(len(moxfld)) + " TappedOut decklists: " + str(len(tppdout)))
 
     for x in range(len(moxfld)):
@@ -95,8 +95,11 @@ def scraper():
         mx_deck_address = moxfld.pop()
         print('Moxfield Decks left: ' + str(len(moxfld)))
         mx_deck_list = get_moxfield_lists(valid_proxy, mx_deck_address, pause)
-        backup_work(mx_deck_list)
-        print(mx_deck_address + ' Scraped with proxy address: ' + str(valid_proxy))
+        # backup_work(mx_deck_list)
+        decks_test.write(moxfld[x] + ' ' +str(len(mx_deck_list)) + '\n')
+        mx_deck_list = [decks_test.write(s.strip() + '\n') for s in mx_deck_list]
+        print(mx_deck_address + ' Scraped.')
+        print('With proxy address: ' + str(valid_proxy))
         log_scrape(mx_deck_address, len(mx_deck_list))
         while_loop_cntrl += 1
         print('Decks scraped: ' + str(while_loop_cntrl))
@@ -110,12 +113,13 @@ def scraper():
         print('TappedOut Decks left: ' + str(len(tppdout)))
         tp_deck_address = tppdout.pop()
         tp_deck_list = get_tappedout_lists(valid_proxy, tp_deck_address, pause)
-        backup_work(tp_deck_list)
-        print(tp_deck_address + ' Scraped with proxy address: ' + str(valid_proxy))
+        # backup_work(tp_deck_list)
+        decks_test.write(tppdout[x] + ' ' +str(len(tp_deck_list)) + '\n')
+        tp_deck_list = [decks_test.write(s.strip() + '\n') for s in tp_deck_list]
+        print(tp_deck_address + ' Scraped.')
+        print('With proxy address: ' + str(valid_proxy))
         log_scrape(tp_deck_address, len(tp_deck_list))
         while_loop_cntrl += 1
-    if len(moxfld) == 0 and len(tppdout) == 0:
-        print('Decks scraped: ' + str(while_loop_cntrl))
 
 
 if __name__ == "__main__":
