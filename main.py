@@ -55,11 +55,14 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address1)
     driver.implicitly_wait(pause)
-    decklist_dirty = driver.find_elements(By.CLASS_NAME, "member")
-    decklist_dirty = [b for b in decklist_dirty if b] # remove blanks
-    decklist_set = set(decklist_dirty) # remove possible duplicates by converting find_elements return list to set.
-    ret_list1 = [c.text.split(' ', 1)[1] for c in decklist_set]
-    return ret_list1
+    decklist_dirty = driver.find_elements(By.XPATH, "//div[@class='row board-container'][1]//descendant::div")
+    decklist = [a.text.strip().split('\n') for a in decklist_dirty]
+    decklist = [a for b in decklist for a in b]
+    # regex.sub replaces something like 5x (num + letter x) with ''
+    decklist = [re.sub("^\dx", '', a) for a in decklist]
+    decklist = [a.strip() for a in decklist if a if '(' not in a]
+    driver.close()
+    return decklist
 
 # create txt log incase the scrape gets interrupted
 def log_scrape(loglink, qty):
