@@ -28,7 +28,7 @@ def ddb_list() -> tuple:
     return moxfield, tappedout
 
 # Script to get individual lists from moxfield.com
-def get_moxfield_lists(proxy, deck_address, pause) -> list:
+def get_moxfield_lists(proxy, deck_address, pause) -> dict:
     edge_options = EdgeOptions()
     edge_options.use_chromium = True
     edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
@@ -36,6 +36,12 @@ def get_moxfield_lists(proxy, deck_address, pause) -> list:
     driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address)
     driver.implicitly_wait(pause)
+    deck_name = driver.find_element(By.XPATH, "//div[@class='deckheader']"
+                                              "//div[@class='deckheader-content']/"
+                                              "/div[@class='container py-5 text-white']"
+                                              "//form/h1[@class='mb-2']/"
+                                              "/span[@id='menu-deckname']"
+                                              "//span[@class='deckheader-name']")
     decklist_dirty = driver.find_elements(By.XPATH, "//div[@class='deckview']")
     decklist = [a.text.strip().split('\n') for a in decklist_dirty]
     decklist = [a for a in decklist[0]]
@@ -43,12 +49,12 @@ def get_moxfield_lists(proxy, deck_address, pause) -> list:
                        "[0-9]|^R.+\sH.+|^[A-Za-z].+@.[A-Za-z].+|"
                        "^V.+\sO.+|^A..\sT.+", '', a) for a in decklist]
     decklist = [a.strip() for a in decklist if '' != a]
-    print(decklist)
     driver.close()
-    return decklist
+    ret_dict = {deck_name: decklist}
+    return ret_dict
 
 # Script to get individual lists from tappedout.com
-def get_tappedout_lists(proxy, deck_address1, pause) -> list:
+def get_tappedout_lists(proxy, deck_address1, pause) -> dict:
     edge_options = EdgeOptions()
     edge_options.use_chromium = True
     edge_options.add_argument('headless'), edge_options.add_argument('disable-gpu')
@@ -56,14 +62,22 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     driver = selenium.webdriver.Edge(options=edge_options)
     driver.get(deck_address1)
     driver.implicitly_wait(pause)
+    deck_name = driver.find_element(By.XPATH, "//body[@id='sitebody']"
+                                              "//div[@id='main-content']"
+                                              "//div[@id='body']"
+                                              "//div[@class='container-fluid']"
+                                              "//div[@class='row']"
+                                              "//div[@class='col-lg-9 col-md-8']"
+                                              "//div[@class='row'][1]//div[@class='col-xs-12']"
+                                              "//div[@class='well well-jumbotron']/h2")
     decklist_dirty = driver.find_elements(By.XPATH, "//div[@class='row board-container'][1]//descendant::div")
     decklist = [a.text.strip().split('\n') for a in decklist_dirty]
     decklist = [a for b in decklist for a in b]
-    # regex.sub replaces something like 5x (num + letter x) with ''
     decklist = [re.sub("^[0-9]x|[1-9][0-9]x", '', a) for a in decklist]
     decklist = [a.strip() for a in decklist if a if '(' not in a]
     driver.close()
-    return decklist
+    ret_dict = {deck_name: decklist}
+    return ret_dict
 
 # create txt log incase the scrape gets interrupted
 def log_scrape(loglink, qty):
@@ -72,7 +86,7 @@ def log_scrape(loglink, qty):
     f.close()
 
 # Write data to pickle file using pandas.
-def backup_work(scrapped_list):
+def backup_work(scrapped_list, deck_name):
     df1 = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cedh_webscrape1.pk1")
     # df1 = pd.DataFrame(scrapped_list, columns=['Card_names'])
     df2 = pd.DataFrame(scrapped_list, columns=['Card_names'])
