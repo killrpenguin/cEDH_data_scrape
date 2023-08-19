@@ -39,10 +39,11 @@ def get_moxfield_lists(proxy, deck_address, pause) -> list:
     decklist_dirty = driver.find_elements(By.XPATH, "//div[@class='deckview']")
     decklist = [a.text.strip().split('\n') for a in decklist_dirty]
     decklist = [a for a in decklist[0]]
-    decklist = [a for a in decklist if 'Buy' not in a if 'Add' not in a
-                if 'Sell' not in a if 'N/A' not in a if 'View' not in a
-                if 'Expand' not in a if '$' not in a if '€' not in a
-                if '(' not in a if '1' not in a if '2' not in a]
+    decklist = [re.sub("^\d*x|[A-Za-z]/[A-Za-z]|^\$.+|^€.+|.+\(\d+.*|"
+                       "[0-9]|^R.+\sH.+|^[A-Za-z].+@.[A-Za-z].+|"
+                       "^V.+\sO.+|^A..\sT.+", '', a) for a in decklist]
+    decklist = [a.strip() for a in decklist if '' != a]
+    print(decklist)
     driver.close()
     return decklist
 
@@ -59,7 +60,7 @@ def get_tappedout_lists(proxy, deck_address1, pause) -> list:
     decklist = [a.text.strip().split('\n') for a in decklist_dirty]
     decklist = [a for b in decklist for a in b]
     # regex.sub replaces something like 5x (num + letter x) with ''
-    decklist = [re.sub("^\dx", '', a) for a in decklist]
+    decklist = [re.sub("^[0-9]x|[1-9][0-9]x", '', a) for a in decklist]
     decklist = [a.strip() for a in decklist if a if '(' not in a]
     driver.close()
     return decklist
