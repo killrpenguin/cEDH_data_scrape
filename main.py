@@ -10,6 +10,7 @@ import random
 import re
 import asyncio
 
+
 # Get list of deck links from DDB
 def ddb_list() -> tuple:
     url = "https://cedh-decklist-database.com/"
@@ -26,6 +27,7 @@ def ddb_list() -> tuple:
             tappedout.append(tppd.string)
 
     return moxfield, tappedout
+
 
 # Script to get individual lists from moxfield.com
 def get_moxfield_lists(*, proxy, deck_address, pause) -> dict:
@@ -49,9 +51,10 @@ def get_moxfield_lists(*, proxy, deck_address, pause) -> dict:
                        "[0-9]|^R.+\sH.+|^[A-Za-z].+@.[A-Za-z].+|"
                        "^V.+\sO.+|^A..\sT.+", '', a) for a in decklist]
     decklist = [a.strip() for a in decklist if '' != a]
+    ret_dict = {'Card_Name': decklist, 'Deck_Name': deck_name.text.strip()}
     driver.close()
-    ret_dict = {'Card_Name': decklist, 'Deck_Name': deck_name}
     return ret_dict
+
 
 # Script to get individual lists from tappedout.com
 def get_tappedout_lists(*, proxy, deck_address1, pause) -> dict:
@@ -75,29 +78,45 @@ def get_tappedout_lists(*, proxy, deck_address1, pause) -> dict:
     decklist = [a for b in decklist for a in b]
     decklist = [re.sub("^[0-9]x|[1-9][0-9]x", '', a) for a in decklist]
     decklist = [a.strip() for a in decklist if a if '(' not in a]
+    ret_dict = {'Card_Name': decklist, 'Deck_Name': deck_name.text.strip()}
     driver.close()
-    ret_dict = {'Card_Name': decklist, 'Deck_Name': deck_name}
     return ret_dict
 
+
+
 # create txt log incase the scrape gets interrupted
-def log_scrape(*, file_to_mod, deck_link, deck_name, deck_qty):
-    file_to_mod.write("scraped " + deck_name + ': ' +
+def log_scrape(*, file_to_mod, deck_link, deck_qty):
+    file_to_mod.write("scraped " + ': ' +
                       ' Cards: ' + str(deck_qty) +
                       " from: " + str(deck_link) + "\n")
+
+
+def make_pickle() -> str:
+    testlst = ['a', 'b']
+    dkname = 'TestDeck!'
+    a = 'http://www.mx.com/1311'
+    testd = {'Card_Name': testlst, 'Deck_Name': dkname, 'Deck_Link': a}
+    df = pd.DataFrame(data=testd)
+    df.to_pickle(r"C:\Users\dmcfa\Desktop\cEDH_Decks.pk1")
+    return 'Created'
+
 
 # Write data to pickle file using pandas.
 def backup_work(*, scraped_dict, deck_link):
     scraped_dict.update({"Deck_Link": deck_link})
     current_df = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cEDH_Decks.pk1")
     df2 = pd.DataFrame(data=scraped_dict)
-    df_to_save = pd.concat([current_df, df2], axis=0)
+    df_to_save = pd.concat([current_df, df2], ignore_index=True, axis=0)
     df_to_save.to_pickle(r"C:\Users\dmcfa\Desktop\cEDH_Decks.pk1")
-    print(df2.head(1))
-    print(df2.tail(3))
+    print(df_to_save.head(3))
+    print(df_to_save.tail(3))
     print(str(df_to_save.shape[0]) + ' Rows in Pickle file.')
+
 
 # Function for scraping the 400 deck lists from the DDB.
 def scraper():
+    pkl_file = make_pickle()
+    print(pkl_file + ' New pickle file.')
     f = open("scrape_log.txt", "a")
     proxies_list = asyncio.run(async_proxy_pooll.main_proxy_pool())
     print('Returned ' + str(len(proxies_list)) + ' proxies.')
@@ -114,11 +133,11 @@ def scraper():
         mx_deck_address = moxfld.pop()
         print('Moxfield Decks left: ' + str(len(moxfld)))
         mx_deck = get_moxfield_lists(proxy=valid_proxy, deck_address=mx_deck_address, pause=pause)
-        backup_work(scraped_dict=mx_deck, deck_link=x)
+        backup_work(scraped_dict=mx_deck, deck_link=mx_deck_address)
         print(mx_deck_address + ' Scraped.')
         print('With proxy address: ' + str(valid_proxy))
         log_scrape(file_to_mod=f, deck_link=mx_deck_address,
-                   deck_qty=len(mx_deck), deck_name=mx_deck['Deck_Name'])
+                   deck_qty=len(mx_deck))
         scrape_count += 1
         print('Decks scraped: ' + str(scrape_count))
 
@@ -131,14 +150,15 @@ def scraper():
         print('TappedOut Decks left: ' + str(len(tppdout)))
         tp_deck_address = tppdout.pop()
         tp_deck = get_tappedout_lists(proxy=valid_proxy, deck_address1=tp_deck_address, pause=pause)
-        backup_work(scraped_dict=tp_deck, deck_link=y)
+        backup_work(scraped_dict=tp_deck, deck_link=tp_deck_address)
         print(tp_deck_address + ' Scraped.')
         print('With proxy address: ' + str(valid_proxy))
         log_scrape(file_to_mod=f, deck_link=mx_deck_address,
-                   deck_qty=len(tp_deck), deck_name=tp_deck['Deck_Name'])
+                   deck_qty=len(tp_deck))
         scrape_count += 1
         print('Decks scraped: ' + str(scrape_count))
     f.close()
+
 
 if __name__ == "__main__":
     scraper()
