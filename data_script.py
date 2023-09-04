@@ -1,9 +1,16 @@
 # proxies_list = open("tested_proxies", "r").read().strip().split("\n")
 import pandas as pd
+import numpy as np
 
 
-df1 = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cEDH_Decks.pk1")
-print(df1.value_counts(['Card_Name']))
+df = pd.read_pickle(r"C:\Users\dmcfa\Desktop\cEDH_Decks.pk1")
+f = open('competitive_decks', "r").read().strip().split("\n")
+lst = open('list', 'r').read().strip().split('\n')
+# print(df.value_counts(['Card_Name']))
+for i in f:
+    if i not in lst:
+        print(i)
+"""df['Status'] = np.where(df['Deck_Link'].item in f, 'Competitive', 'Outdated')
 
-# df2 = df1.pivot_table(index = ['Card_names'], aggfunc ='size')
-# df3 = df2.sort_values(by='col1', ascending=False, na_position='first')
+for j, k in df.iterrows():
+    print(j, k)"""
